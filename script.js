@@ -1,18 +1,4 @@
-window.fchat.init({
-  containerId: 'fchat-container',
-  // Add any other configuration options here
-});
-// Save fchat state on state change
-window.addEventListener('fchat:statechange', function(event) {
-  localStorage.setItem('fchat-state', JSON.stringify(event.detail));
-});
 
-// Restore fchat state on page load
-window.addEventListener('load', function() {
-  var savedState = localStorage.getItem('fchat-state');
-  if (savedState) {
-    window.fchat.setState(JSON.parse(savedState));
-  }
 });
 // const voucherTexts = ['Chỉ từ 1,9 TỶ/CĂN', 'Nhanh Tay Nào !'];
 // const voucherColors = {
